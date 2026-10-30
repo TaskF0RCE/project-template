@@ -1,0 +1,12 @@
+# Le titre de la PR devient le commit sur main : il doit suivre les Conventional Commits.
+name: Titre de PR
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions: {}
+
+jobs:
+  title:
+    uses: TaskF0RCE/.github/.github/workflows/pr-title.yml@main

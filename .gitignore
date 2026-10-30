@@ -1,0 +1,22 @@
+# Dépendances et builds
+node_modules/
+dist/
+build/
+target/
+out/
+.gradle/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets : ne jamais commiter de mots de passe ni de tokens
+.env
+.env.*
+!.env.example
+
+# Éditeurs et système
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
