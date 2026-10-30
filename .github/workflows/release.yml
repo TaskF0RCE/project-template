@@ -1,0 +1,22 @@
+# Bouton « Nouvelle release » du dashboard → PR de release (version + CHANGELOG).
+# Merge de cette PR dans main → tag + release GitHub.
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    uses: TaskF0RCE/.github/.github/workflows/release.yml@main

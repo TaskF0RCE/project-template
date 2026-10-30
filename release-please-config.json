@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "pull-request-header": ":rocket: Release préparée automatiquement. Approuvez puis mergez cette PR pour publier la version.",
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "bump-minor-pre-major": true,
+      "include-component-in-tag": false,
+      "changelog-sections": [
+        { "type": "feat", "section": "✨ Nouveautés" },
+        { "type": "fix", "section": "🐛 Corrections" },
+        { "type": "perf", "section": "⚡ Performances" },
+        { "type": "revert", "section": "↩️ Retours en arrière" },
+        { "type": "docs", "section": "📝 Documentation" },
+        { "type": "refactor", "section": "♻️ Refactorisation", "hidden": true },
+        { "type": "test", "section": "🧪 Tests", "hidden": true },
+        { "type": "build", "section": "📦 Build", "hidden": true },
+        { "type": "ci", "section": "🤖 CI", "hidden": true },
+        { "type": "chore", "section": "🧹 Divers", "hidden": true },
+        { "type": "style", "section": "🎨 Style", "hidden": true }
+      ]
+    }
+  }
+}
