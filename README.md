@@ -30,7 +30,7 @@ voir les [releases](../../releases) et le [CHANGELOG](CHANGELOG.md) (créé à l
 | `.github/workflows/release.yml` | Release automatique avec release-please (bouton « Nouvelle release » du dashboard). |
 | `.github/ISSUE_TEMPLATE/` | Formulaires « Bug » et « Feature ». |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Ce qu'on remplit en ouvrant une PR. |
-| `.github/CODEOWNERS` | Chacun review le code de l'autre. |
+| `.github/CODEOWNERS` | Chacun review le code des autres. |
 | `release-please-config.json` | Sections du CHANGELOG et règles de version. |
 | `CONTRIBUTING.md` | Le guide pas à pas. |
 

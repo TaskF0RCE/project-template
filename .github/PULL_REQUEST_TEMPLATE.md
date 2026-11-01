@@ -7,7 +7,7 @@ Le TITRE de la PR doit suivre les Conventional Commits, il devient le commit sur
 
 ## Ce que ça change
 
-<!-- En deux ou trois phrases, pour que l'autre puisse reviewer vite. -->
+<!-- En deux ou trois phrases, pour que les autres puissent reviewer vite. -->
 
 ## Issue liée
 

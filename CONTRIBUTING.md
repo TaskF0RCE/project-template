@@ -1,6 +1,6 @@
 # Contribuer au projet
 
-Ce guide explique comment on travaille à deux sans se marcher dessus. Pour chaque étape, il y a **trois façons de faire**, de la plus simple à la plus technique :
+Ce guide explique comment on travaille en équipe sans se marcher dessus. Pour chaque étape, il y a **trois façons de faire**, de la plus simple à la plus technique :
 
 - 📊 **Dashboard** : https://taskf0rce.github.io/VeD_Opps/ (des boutons, rien à installer)
 - 🖥️ **GitHub Desktop** : https://desktop.github.com (l'appli pour copier le code sur ton PC)
@@ -14,13 +14,13 @@ Prends celle que tu préfères. Le résultat est le même.
 
 ```
   Issue          Branche              PR                 Review        Merge          Release
- (la tâche) → feature/ma-tache → (demande d'ajout) → (l'autre relit) → (dans main) → (v0.2.0)
+ (la tâche) → feature/ma-tache → (demande d'ajout) → (un autre relit) → (dans main) → (v0.2.0)
 ```
 
 1. **`main` est toujours stable** : c'est la version qui marche. On n'y pousse **jamais** directement.
 2. **Une tâche = une issue = une branche** (`feature/...` pour une nouveauté, `fix/...` pour une correction).
 3. Quand c'est prêt, on ouvre une **pull request (PR)** : « voici mes changements, je propose de les ajouter à `main` ».
-4. **L'autre relit** et approuve. On review toujours le code de l'autre, jamais le sien.
+4. **Un autre membre relit** et approuve. On review toujours le code des autres, jamais le sien.
 5. Quand la CI est verte ✅ et la PR approuvée 👍, on **merge**.
 6. De temps en temps, on publie une **release** : la version est calculée toute seule.
 
@@ -108,14 +108,14 @@ La **CI** se lance alors toute seule sur ta PR : elle vérifie que le code se co
 
 Quand ta tâche est finie et que la CI est verte :
 
-- 📊 **Dashboard** : onglet **Pull requests** → ta PR → **Prête pour review**. L'autre est prévenu automatiquement et la carte passe dans « En review ».
-- **github.com** : ouvre ta PR → **Ready for review**, puis colonne de droite → **Reviewers** → choisis l'autre.
+- 📊 **Dashboard** : onglet **Pull requests** → ta PR → **Prête pour review**. Les autres membres sont prévenus automatiquement et la carte passe dans « En review ».
+- **github.com** : ouvre ta PR → **Ready for review**, puis colonne de droite → **Reviewers** → choisis les autres membres.
 
 Pense à remplir la description de la PR : ce que ça change et comment tester.
 
 ---
 
-## 6. Reviewer le code de l'autre
+## 6. Reviewer le code des autres
 
 L'onglet **Pull requests** du dashboard montre en haut ce que **tu** dois reviewer.
 
@@ -211,7 +211,7 @@ Pas de panique, tant que tu n'as pas poussé :
 - 🖥️ **GitHub Desktop** : **Current branch → New branch**. Desktop propose d'emmener tes changements (*Bring my changes*).
 - **Terminal** : `git switch -c feature/mon-truc`. Tes modifications non commitées te suivent.
 
-Si tu as déjà poussé sur `main`, préviens l'autre : le check « garde-fou main » sera rouge.
+Si tu as déjà poussé sur `main`, préviens l'équipe : le check « garde-fou main » sera rouge.
 </details>
 
 <details>
@@ -239,7 +239,7 @@ Survole-le : le dashboard dit ce qui manque (CI pas verte, pas encore approuvée
 | **Commit** | Une sauvegarde de modifications, avec un message. |
 | **Push / Pull** | Envoyer ses commits sur GitHub / récupérer ceux des autres. |
 | **PR (pull request)** | La demande pour ajouter une branche dans `main`. C'est là qu'on discute et qu'on review. |
-| **Review** | La relecture du code de l'autre. |
+| **Review** | La relecture du code d'un autre membre. |
 | **Merge** | Ajouter les changements d'une PR dans `main`. |
 | **CI** | Les vérifications automatiques (build, tests) lancées par GitHub Actions. |
 | **Release** | Une version publiée (ex. `v0.2.0`), avec la liste des changements. |
